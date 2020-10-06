@@ -4,6 +4,9 @@
 
 .nav-container{
     background:rgb(7,7,7);
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 nav{
@@ -21,6 +24,7 @@ ul{
     justify-content: space-between;
     flex: 1;
     list-style: none;
+    letter-spacing: 0.1rem;
 }
 #logo{
     flex: 3;
@@ -43,6 +47,13 @@ ul{
     padding: 1rem 2rem;
     border-radius: 2rem;
 }
+
+.order:hover{
+    color: #f54538;
+    background: white;
+    transition-delay: 0.1s;
+
+}
 }
 .showcase{
     display: grid;
@@ -64,10 +75,24 @@ ul{
         justify-self: center;
     }
     .info{
-        grid-column: 4/5;
+        margin-right: 10%;
+        // bottom: 20%;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.2rem;
+        grid-column: 4/6;
         grid-row: 3/4;
+
     }
     h3{
-        padding-bottom: 3rem;
+        font-family: 'Sansita Swashed', cursive;
+        font-size: 3rem;
+        // text-transform: uppercase;
+        padding-bottom: 1.5rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+        font-style: italic;
     }
 }
